@@ -1,0 +1,635 @@
+html{
+    box-sizing: border-box;
+    
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+} 
+body{
+   padding:0px;
+   margin: 0px;
+   background-color:#f0ede2;
+}
+/*Panel style the BurgerStore begin*/
+.BurgerStore-Center-Panel1,.BurgerStore-Head-Panel{
+    text-align: center;
+}
+.BurgerStore-Center-Panel1{
+    background-color:rgb(231, 208, 157);
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+}
+.Center-Panel-Cadre{
+    display: inline-block;
+    /* width: 100%; */
+}
+.Center-Panel-Cadre img,.burger-item img{
+    width: 200px;
+    /* width: 100%; */
+}
+/*Panel style the BurgerStore end*/
+
+/*Menu style of BurgerStore begin*/
+.BurgerStore-Menu-List{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0,0, .5);
+    
+    
+   
+    
+    
+}
+.logo{
+    flex:1;
+    order: 0;
+   
+   
+}
+.logo a {
+    
+    display: inline-grid;
+    grid-template-columns: auto auto  ;
+    grid-gap:10px;
+    text-decoration: none;
+ 
+}
+
+
+.BurgerStore-Menu-List{
+    padding: 0px;
+}
+.item{
+   text-align: center;  
+    /* background-color: rgb(211, 211, 211); */
+    margin: 0px 10px 0px 10px;
+    /* border-radius: 6px; */
+    /* border:1px solid rgb(192, 191, 191); */
+    text-transform: uppercase;
+    width: 100%;
+    height: 30px;
+    order: 1;
+    margin:5px ;
+   
+
+   
+    
+    
+}
+.BurgerStore-Menu-List li{
+    list-style-type: none;
+}
+.item a{
+   text-decoration: none;
+   color: rgb(110, 110, 110);
+   display: block;
+   
+    
+    
+}
+.item a:hover{
+     /* background-color: rgb(226, 226, 226); */
+    color: rgb(139, 139, 139);
+}
+
+.BurgerStore-Menu-List li{
+    list-style-type: none;
+    padding: 5px 30px 5px 30px;
+}
+
+.BurgerStore-Center-Panel2{
+    padding: 0px;
+    text-align: center;
+    
+}
+/*Menu style of BurgerStore end*/
+
+
+.Space-Menu {
+    padding: 1px 0px 5px 40px;
+    font-size: 28px;
+    color: #965b0e;
+}
+/*Section style of BurgerStore begin*/
+
+.Section{
+    display:inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: center; 
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+    padding-top: 40px;
+    margin: 0px 30px 20px 0px;
+    
+}
+.Section a img{
+   
+   border-radius: 30px;
+   
+}
+.Section:hover{
+  transform:scale(1.1);
+  background-color: rgb(246, 246, 246);
+ }
+ .Section a h3:hover{
+    color:#c98b3a;
+   }
+.Section a {
+   text-decoration: none;
+   display: block;
+   
+ }
+.Section a h3{
+    color:#965b0e;
+    font-size: 23px;
+    text-transform: uppercase;
+ }
+/*Section style of BurgerStore end*/
+
+/*footer begin*/
+
+.BurgerStore-footer{
+    background-color:rgb(221, 173, 68);
+    
+  
+    
+    
+}
+.info ul li a{
+    text-decoration: none;
+    color: black;
+}
+.info ul li a:hover{
+    text-decoration:underline;
+}
+.info ul li ,.link ul li{
+    list-style-type: none;
+}
+.info ul li h5{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:rgb(61, 4, 54);
+}
+
+.info{
+    display:inline-block;
+    padding-top: 50px;
+   
+}
+
+.copyright {
+    padding-top:20px;
+    
+}
+.copyright p{
+    color:rgb(53, 47, 47);
+    padding-left:20px ;
+    
+}
+/*footer end*/
+
+/*BTX style of BurgerStore begin*/
+
+.btx{
+    display: inline-block;
+    background-color: rgb(214, 62, 62);
+    padding: 8px 30px 8px 30px;
+    margin:10px 0px 0px 20px ;
+  
+    border-radius: 5px;
+    
+    
+    
+}
+.btx a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+  
+    
+    
+}
+.btx:hover{
+    transform:scale(1.1);
+    background-color: rgb(235, 70, 70);
+}
+/*BTX style of BurgerStore end*/
+/*order style begin*/
+
+.order{
+    box-shadow: 0px 0px 1px 0px rgba(0, 0,0, .5);
+     height: 100%;
+    
+}
+.order-item{
+    width: 250px;
+    display: inline-block;
+    padding: 0px 0px 10px 0px;
+}
+.order-item p{
+    margin:0;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.order-item a{
+    text-decoration: none;
+    color: rgb(63, 63, 63)
+}
+.control-panel-burger{
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap:10px;
+   
+    
+}
+.order-panel {
+    
+   display: none;
+   
+   
+   
+}
+.order-panel li{
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 5px;
+    border-bottom: 1px solid  rgba(100, 100, 100, 0.287);
+   
+ 
+}
+.order-panel a{
+text-decoration: none;
+color: rgb(22, 22, 22);
+display: block;
+
+
+ 
+}
+
+
+
+/* .item-show ,.item-description{
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    
+    
+}
+.item-show img{
+    border-radius: 40px;
+    border: 1px solid #f7f7f7;
+}
+.item-description{
+    text-align: left;
+    
+   
+}
+.order-item{
+    display: grid;
+    background-color:rgb(216, 198, 163);
+    margin: 0px 0px 20px 0px; 
+    
+    
+
+    border-radius: 6px;
+}
+.order-item p{
+ text-transform: uppercase;
+ color: black;
+ font-weight: bold;
+}
+.order{
+    margin: 0px;   
+}
+*/
+.order-btx{
+    display: inline-block;
+    background-color: rgb(214, 62, 62);
+    width: 100%;
+    padding: 8px 30px 8px 30px;
+     margin-top:20px ;
+    border-radius: 5px;
+    text-align: center;
+    color: #f7f7f7;
+}
+.order-btx a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+} 
+.Ingredient{
+display: grid;
+text-align: center;
+
+} 
+/*
+order style end*/
+
+/*checkout style begin --------------*/
+
+.checkout-option div:first-of-type{
+   margin-bottom:5px ;
+}
+.checkout-option> div>a{
+    text-decoration: none;
+    cursor: pointer;
+ }
+ .checkout-option> div>a:hover{
+    color: rgb(138, 11, 131);
+ }
+.checkout-infos a{
+    text-decoration: none;
+}
+.checkout-menu ,.checkout-item ,.checkout-infos ,.checkout-option {
+  display: flex;
+}
+.checkout-option a{
+    padding: 5px 10px 5px 10px;
+}
+.checkout-menu div p,.checkout-item div p,.checkout-infos div p,.checkout-option div p{
+    padding: 5px 10px 5px 10px;
+  }
+.checkout-menu div:first-of-type,.checkout-item div:first-of-type,.checkout-infos div:first-of-type,.checkout-option div:first-of-type{
+    flex:1;
+  
+  }
+.checkout-menu{
+    background-color:rgb(216, 198, 163);
+    margin-bottom: 20px;
+}
+.checkout-order{
+    flex:1;
+    margin: 5px;
+    
+    
+}
+.checkout{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.Proced-form{
+    
+  background-color: rgb(231, 227, 227);
+  margin: 20px 5px 20px 5px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  
+}
+.btx-checkout{
+    width: 300px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 10px 0px 10px 0px;
+   
+}
+.quantity{
+display: flex;
+margin: 5px;
+}
+.btx-math{
+    background-color: rgb(214, 62, 62);
+    padding: 8px 0px 8px 0px;
+    border-radius: 5px;
+    border-right: 0px solid transparent;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+.btx-math:hover{
+    background-color: rgb(245, 101, 101);
+    cursor: pointer;
+    
+    
+}
+/*checkout style end --------------*/
+
+/*show burger begin*/
+
+.burger-show{
+   
+  text-align: center;
+  width: 90%;
+  margin-bottom: 20px;
+  
+
+  
+
+   
+}
+.burger-item,.burger-details{
+ 
+    display: inline-block;
+    margin: 0px 0px 0px 30px;
+    
+}
+
+.panel-tab-menu{
+display: inline-grid;
+grid-template-columns: auto auto;
+margin: 30px 0px 0px 0px;
+
+
+
+}
+.panel-tab-menu div{
+    padding: 10px;
+   
+    
+    }
+ 
+    
+    .panel-tab-menu div a{
+        font-size: 18px;
+        cursor: pointer;
+        
+        }
+.tab-select{
+   border-top:1px solid gray;
+   border-left:1px solid gray;
+   border-right:1px solid gray;
+   background-color:#f0ebeb;
+    }
+    .panel-tab-text2{
+        display: none;
+    }
+
+.suggestions{
+    text-align: center;
+}
+.panel-text{
+    height: 200px;
+}
+  
+
+/* .searchBar input{
+ 
+    border: 1px solid #ddd;
+    outline-style: hidden;
+    outline-color:  rgb(99, 108, 238);
+     width: 210px;
+     margin-top: 10px;
+     
+    
+ 
+ }
+  */
+/*show burger end*/
+
+/*payment style begin*/
+.errors li{
+    list-style-type: none;
+    color: rgb(238, 22, 22);
+}
+.payment-container{
+   
+}
+.user-infos input[type="text"]{
+    border:none;
+    border-bottom: 1px solid rgb(93, 93, 93);
+    background: transparent;
+    width: 300px;
+    font-family: "Comic Sans Ms","TSCu_Comic";
+    font-size: 18px;
+
+}
+.delivering-options input[type="submit"]{
+    font-size: 18px;
+}
+.receipt{
+    box-shadow: 0px 1px 5px rgba(0, 0,0, .5);
+    background: #f0ebeb;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    font-family: "Comic Sans Ms","TSCu_Comic";
+} 
+
+.summary table {
+   
+display: grid;
+width: 90%;
+   
+}
+.payment-infos{
+
+  margin-left: 20px;
+    
+}
+.payment-infos h2{
+
+   background-color: #e0dac8;
+   padding: 5px;
+      
+  }
+.summary table tr  {
+    
+    text-align: left;
+    
+  
+   
+}
+
+/*payment style end*/
+@media all and (min-width:960px){
+    .BurgerStore-Center-Panel2{
+        padding: 15px 10px 15px 10px;
+       
+    }
+    .Center-Panel-Cadre img,.burger-item img{
+        width: 100%;
+        /* width: 100%; */
+    }
+    .Proced-form{
+    
+        width: 400px;
+        margin: 0px 20px 0px 20px;
+        
+      }
+    
+    .BurgerStore-footer{
+        padding: 0px 0px 50px 200px;
+    }
+    
+    .item{
+        
+        display: block;
+        width: auto;
+     
+     
+
+    }
+    /* .order-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .Ingredient{
+        text-align: left;
+        
+    } */
+    /* .order-btx{
+        width: 160px;
+    } */
+    /* .order{
+        margin-left: 300px;
+       
+        
+    } */
+    .BurgerStore-Menu-List{
+        
+        flex-wrap: nowrap;
+    }
+    .checkout{
+       
+        flex-wrap: nowrap;
+        
+      }
+      .checkout-order{
+        
+        padding: 0px 0px 0px 100px;
+        
+    }
+    .checkout-menu div:first-of-type,.checkout-item div:first-of-type,.checkout-infos div:first-of-type,.checkout-option div:first-of-type{
+        padding: 0px 200px 0px 0px;
+      
+      }
+      
+  
+    .payment-container{
+        display: inline-grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap:10px
+       
+    
+    }
+    .order-panel {
+    
+    
+      
+        padding: 0;
+        width: 250px;
+        height: 200px;
+        display: block;
+       
+    }
+    .order{
+        height: 600px;
+    }
+   
+    
+}
+
+    
+   
+
+
