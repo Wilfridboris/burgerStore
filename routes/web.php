@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'AccueilController@index')->name('accueil');
 Route::get('/burger','BurgerController@index')->name('burger.index');
 Route::post('/orders','BurgerController@store')->name('burger.store');
+Route::post('/burger/comment/{id}','BurgerController@storeComment')->name('burger.storeComment');
 Route::get('/orders/{id}','BurgerController@getOrder')->name('burger.getorder');
 Route::get('/burger/order/{topic}','BurgerController@setOrder')->name('burger.order');
 Route::get('/burger/cart','BurgerController@checkout')->name('burger.checkout');

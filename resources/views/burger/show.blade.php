@@ -4,6 +4,38 @@
 <div>
 </div>
 <table class="burger-show" >
+    
+        <div class="burger-show-comment">
+           <div>
+             <form action="" method="POST">
+               <p class="close" ><i class="fas fa-times"></i><p>
+                <p>Name:</p>
+                <p><input type="text"  id="name"name="name" placeholder="name"/></p>
+                <p>Email:</p>
+                <p><input type="text" id="email" name="email" placeholder="Email"/></p>
+
+                <p>Comment:</p>
+                <p><textarea row="4" cols="40" id="comment" name="comment"></textarea></p>
+               
+                <p>
+                    <span><i id="rating1" class="fas fa-star checked"></i></span>
+                    <span><i id="rating2" class="fas fa-star checked"></i></span>
+                    <span><i id="rating3" class="fas fa-star checked"></i></span>
+                    <span><i id="rating4" class="fas fa-star "></i></span>
+                    <span><i id="rating5" class="fas fa-star "></i></span>
+                
+                </p>
+                 <p><button type="submit" id="submit_comments">Submit</button></p>
+                 <p id="errors"></p>
+                
+            
+            
+            </form>
+           </div>
+            
+        
+    </div>
+    
     <tr >
         <td class="burger-item">
             <img src="/img/burger.png" alt="">
@@ -11,7 +43,7 @@
         <td class="burger-details">
         <h3>{{$burger->topic}}</h3>
             <p>0.15-0.23kg</p>
-            <p class="star"><i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></p>
+            <p class="star"><i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></p>
             <p class="price">{{$burger->price}} $</p>
             <p class="quantity"></p>
 
@@ -30,17 +62,24 @@
                             </div>
                             <div class="panel-tab-text2 ">
                                 <div class="review-section">
-                                    <div>
-                                       <p><i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> 3.9 review | 49 review </p> 
-                                    <div>
-                                    <div>
-                                        <button>write a review</button>
-                                    <div>
+                                        <div>
+                                            <p><i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> 3.9 review | 49 review </p> 
+                                        </div>
+                                        <div>
+                                            <p><button id="write-comment">Write a review</button></p>
+                                        </div>
                                 </div>
 
                                 <div class="user-review">
-                                <h4>++++ boris 12 days</h4>
-                                <p>good price for the value of the product</p>
+                                    <div>
+                                        <h4>boris </h4>
+                                        <p><i class="fas fa-star"></i></p>
+                                        <h5>yummy</h5>
+                                        <p>good price for the value of the product</p>
+                                    </div>
+                                    <div>
+                                        <p>date</p>
+                                    </div>
 
                                 </div>
                             </div>
@@ -61,6 +100,7 @@
 </table>
                 <div class="suggestions">
                     <H2>people also like</H2>
+                    <p>sdsdsd</p>
                 <div>
 
   

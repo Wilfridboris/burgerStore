@@ -10,6 +10,38 @@ body{
    margin: 0px;
    background-color:#f0ede2;
 }
+/*Panel Main begin*/
+.container-x{
+    position: relative;
+}
+.search-x{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    text-align: center;
+}
+.search-panel{
+ margin:50px 10px;
+}
+.search-panel i{
+    margin-left: 8px;
+    font-size: 18px;
+   }
+#searchbar{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+
+}
+
+/*Panel Main end*/
+
 /*Panel style the BurgerStore begin*/
 .BurgerStore-Center-Panel1,.BurgerStore-Head-Panel{
     text-align: center;
@@ -35,6 +67,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 0px 0px 1px 0px rgba(0, 0,0, .5);
+    margin: 0;
+    
     
     
    
@@ -46,14 +80,6 @@ body{
     order: 0;
    
    
-}
-.logo a {
-    
-    display: inline-grid;
-    grid-template-columns: auto auto  ;
-    grid-gap:10px;
-    text-decoration: none;
- 
 }
 
 
@@ -422,11 +448,44 @@ margin: 5px;
   text-align: center;
   width: 90%;
   margin-bottom: 20px;
+  position: relative;
   
 
   
 
    
+}
+.burger-show-comment{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    background-color: #f7f7f7;
+    width: 350px;
+    height: 450px;
+    box-shadow: 0px 1px 5px rgba(0, 0,0, .5);
+    
+}
+.burger-show-comment div{
+padding: 10px;
+}
+.close{
+   text-align: right;
+   
+    }
+.burger-show-comment div input[type="text"]{
+    width: 300px;
+    height: 30px;
+}
+i{
+    cursor: pointer;
+}
+.checked{
+    color: orange;
 }
 .burger-item,.burger-details{
  
@@ -463,7 +522,27 @@ margin: 30px 0px 0px 0px;
     }
     .panel-tab-text2{
         display: none;
+        
+
     }
+    .review-section,.user-review{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        margin-left:15px;
+        border-top:1px solid   rgba(0, 0, 0, 0.178);
+        padding: 10px 0px 10px 0px;
+
+    }
+    .user-review div h4, .user-review div p, .user-review div h5{
+        
+        padding: 3px;
+        margin: 0px;
+     
+        
+    }
+    
+
 
 .suggestions{
     text-align: center;
@@ -625,6 +704,26 @@ width: 90%;
     .order{
         height: 600px;
     }
+    /** searchbar begin**/
+
+    #searchbar{
+        width: 600px;
+        height: 40px;
+    
+    }
+    .search-panel{
+        margin:100px 50px;
+       }
+    /* searchbar end*/
+
+    /* user-review and review-section begin**/
+    .review-section,.user-review{
+      
+        grid-gap:50%;
+        
+
+    }
+    /* user-review and review-section end**/
    
     
 }

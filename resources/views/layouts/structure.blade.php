@@ -16,9 +16,9 @@
             </div>
             <div>
                 <ul class="BurgerStore-Menu-List">
-                    <li class="logo"><a href="/" ><img src="/img/burger_icon.png" style="width:50px" alt=""/><h2>BurgerStore</h2></a></li>
+                    <li class="logo"><a href="/" ><img src="/img/burger_icon.png" style="width:35px" alt=""/></a></li>
                     <li class=" item">
-                    <a href="/"><i class="fas fa-search"></i> Search</a>
+                    <a id="search" href="/"><i class="fas fa-search"></i> Search</a>
                     </li>
                     <li class="item"><a href={{ route('login') }}>Login</a></li>
                     <li class="item"><a href={{ route('register') }}>Register</a></li>
@@ -28,7 +28,15 @@
                 </ul>
             </div>
 </header>
-    <main>
+    <main class="container-x">
+    <div class="search-x " id="overlay">
+           <div class="search-panel">
+                 <p><input id="searchbar" type="text" placeholder="Find What you looking for"/>     <i class="fas fa-times"></i></p>
+                 <p>search by name</p>
+           </div>
+       
+       
+    </div>
 
     <!--add a content here-->
     @yield('content')
