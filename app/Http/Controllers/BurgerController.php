@@ -189,21 +189,21 @@ class BurgerController extends Controller
     }
     function storeComment($id){
 
-      $name=request('name');
-      $email=request('email');
-      $comment=request('comment');
+    //   $name=request('name');
+    //   $email=request('email');
+    //   $comment=request('comment');
 
-      $inputs=['name'=>$name,'email'=>$email,'comment'=>$comment];
-      $rules=['email'=>'required|email|max:20',
-      'name'=>'required|max:30',
-      'comment'=>'required|max30'];
-      $messages=['email.required'=>'please enter an email',
-      'name.required'=>'please enter a name',
-      'comment.required'=>'please enter a comment'];
-    $validation=Validator::make($inputs,$rules,$messages);
-    if($validation->fails()){
+    //   $inputs=['name'=>$name,'email'=>$email,'comment'=>$comment];
+    //   $rules=['email'=>'required|email|max:20',
+    //   'name'=>'required|max:30',
+    //   'comment'=>'required|max30'];
+    //   $messages=['email.required'=>'please enter an email',
+    //   'name.required'=>'please enter a name',
+    //   'comment.required'=>'please enter a comment'];
+    // $validation=Validator::make($inputs,$rules,$messages);
+    // if($validation->fails()){
       
-    }
+    // }
       return redirect('/burger/'.$id);
     }
     function getOrder($id){

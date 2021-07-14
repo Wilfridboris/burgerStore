@@ -31,7 +31,7 @@
     <main class="container-x">
     <div class="search-x " id="overlay">
            <div class="search-panel">
-                 <p><input id="searchbar" type="text" placeholder="Find What you looking for"/>     <i class="fas fa-times"></i></p>
+                 <p><input id="searchbar" type="text" placeholder="Find What you looking for"/>    <span class="closeS"> <i class="fas fa-times"><span></i></p>
                  <p>search by name</p>
            </div>
        

@@ -7,8 +7,9 @@
     
         <div class="burger-show-comment">
            <div>
-             <form action="" method="POST">
-               <p class="close" ><i class="fas fa-times"></i><p>
+             <form action="{{route('burger.storeComment',$burger->id)}}" method="POST">
+                @csrf
+               <p class="closeC" ><i class="fas fa-times"></i><p>
                 <p>Name:</p>
                 <p><input type="text"  id="name"name="name" placeholder="name"/></p>
                 <p>Email:</p>

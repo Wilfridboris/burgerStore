@@ -147,7 +147,6 @@ $('i').on('click',function(){
 })
 /**submit comment */
 $('#submit_comments').on('click',function(e){
-    e.preventDefault();
     var name=$('#name').val();
     var email=$('#email').val();
     var comment=$('#comment').val();
@@ -180,10 +179,22 @@ $('#submit_comments').on('click',function(e){
     }
    
     if(!Validation(inputs,messages)){
-        console.log(messages)
+        e.preventDefault();
     }
 })
+//close the comment form and the  search from
 
+$('p').on('click',function(){
+   if($(this).is('.closeC')) {
+    $('.burger-show-comment').hide()
+    
+   }
+})
+$('span').on('click',function(){
+    if($(this).is('.closeS')) {
+        $('div.search-x').delay(100).fadeOut(100)
+    }
+ })
 
 
 })
