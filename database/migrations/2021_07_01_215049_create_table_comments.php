@@ -13,7 +13,7 @@ class CreateTableComments extends Migration
      */
     public function up()
     {
-        Schema::create('table_comments', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('customer_name');
@@ -31,6 +31,6 @@ class CreateTableComments extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_comments');
+        Schema::dropIfExists('comments');
     }
 }

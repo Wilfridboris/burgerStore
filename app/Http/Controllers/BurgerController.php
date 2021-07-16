@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Burger;
 use App\Order;
+use App\Comment;
 use Validator;
 use DB;
 use Illuminate\Auth\Events\Validated;
@@ -90,7 +91,8 @@ class BurgerController extends Controller
     }
     function show($id){
       $burger=Burger::findorFail($id);
-      return view('burger.show',['burger'=>$burger]);
+      $comment=Comment::where('burger_id',$id)->get();
+      return view('burger.show',['burger'=>$burger,'comments'=>$comment]);
 
     }
     function getTotal(){
@@ -189,9 +191,17 @@ class BurgerController extends Controller
     }
     function storeComment($id){
 
-    //   $name=request('name');
-    //   $email=request('email');
-    //   $comment=request('comment');
+    
+    //$email=request('email');
+   
+    
+
+    $comment=new Comment();
+    $comment->customer_name=request('name');
+    $comment->comment= request('comment');
+    $comment->review=request('nb_comment');
+    $comment->burger_id=$id;
+    $comment->save();
 
     //   $inputs=['name'=>$name,'email'=>$email,'comment'=>$comment];
     //   $rules=['email'=>'required|email|max:20',

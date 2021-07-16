@@ -26,6 +26,7 @@
                     <span><i id="rating5" class="fas fa-star "></i></span>
                 
                 </p>
+                <input type="text" value="3" class="nb_comment" id="nb_comment" name="nb_comment">
                  <p><button type="submit" id="submit_comments">Submit</button></p>
                  <p id="errors"></p>
                 
@@ -70,19 +71,33 @@
                                             <p><button id="write-comment">Write a review</button></p>
                                         </div>
                                 </div>
-
+                                @foreach($comments as $comment)
                                 <div class="user-review">
                                     <div>
-                                        <h4>boris </h4>
-                                        <p><i class="fas fa-star"></i></p>
-                                        <h5>yummy</h5>
-                                        <p>good price for the value of the product</p>
+                                        <h4>{{$comment->customer_name}} </h4>
+                                       @if($comment->review==5)
+                                       <p><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i></p>
+                                       @endif
+                                       @if($comment->review==4)
+                                       <p><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star"></i></p>
+                                       @endif
+                                       @if($comment->review==3)
+                                       <p><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                       @endif
+                                       @if($comment->review==2)
+                                       <p><i class="fas fa-star checkedc"></i><i class="fas fa-star checkedc"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                       @endif
+                                       @if($comment->review==1)
+                                       <p><i class="fas fa-star checkedc"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                       @endif
+                                        <p>{{$comment->comment}}</p>
                                     </div>
                                     <div>
-                                        <p>date</p>
+                                        <p>{{$comment->created_at}}</p>
                                     </div>
 
                                 </div>
+                                @endforeach
                             </div>
                     </div>
             </td>

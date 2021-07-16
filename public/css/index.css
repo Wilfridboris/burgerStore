@@ -10,6 +10,24 @@ body{
    margin: 0px;
    background-color:#f0ede2;
 }
+.fixed{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: white; 
+ z-index: 2;
+ transform: translate(0,-200px);
+ opacity: 0;
+ visibility: hidden;
+}
+.in-view{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    transform: translate(0,0);
+
+}
 /*Panel Main begin*/
 .container-x{
     position: relative;
@@ -46,6 +64,7 @@ body{
 .BurgerStore-Center-Panel1,.BurgerStore-Head-Panel{
     text-align: center;
 }
+
 .BurgerStore-Center-Panel1{
     background-color:rgb(231, 208, 157);
     margin-bottom: 10px;
@@ -68,6 +87,7 @@ body{
     flex-wrap: wrap;
     box-shadow: 0px 0px 1px 0px rgba(0, 0,0, .5);
     margin: 0;
+   
     
     
     
@@ -83,6 +103,7 @@ body{
 }
 
 
+
 .BurgerStore-Menu-List{
     padding: 0px;
 }
@@ -95,7 +116,7 @@ body{
     text-transform: uppercase;
     width: 100%;
     height: 30px;
-    order: 1;
+    order: 2;
     margin:5px ;
    
 
@@ -450,6 +471,7 @@ margin: 5px;
   margin-bottom: 20px;
   position: relative;
   
+  
 
   
 
@@ -481,10 +503,16 @@ padding: 10px;
     width: 300px;
     height: 30px;
 }
+.nb_comment{
+    display: none;
+}
 i{
     cursor: pointer;
 }
 .checked{
+    color: orange;
+}
+.checkedc{
     color: orange;
 }
 .burger-item,.burger-details{
@@ -522,6 +550,16 @@ margin: 30px 0px 0px 0px;
     }
     .panel-tab-text2{
         display: none;
+        height: 500px;
+       
+        
+
+    }
+    .panel-tab-text1{
+        
+        height: 150px;
+        
+       
         
 
     }
@@ -544,11 +582,9 @@ margin: 30px 0px 0px 0px;
     
 
 
-.suggestions{
-    text-align: center;
-}
+
 .panel-text{
-    height: 200px;
+    
 }
   
 

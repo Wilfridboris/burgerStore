@@ -88,6 +88,8 @@ $('#write-comment').on('click',function(){
         $('.burger-show-comment').hide()
     }else{
         $('.burger-show-comment').show() 
+        
+       
     }
 })
 
@@ -138,6 +140,7 @@ $('i').on('click',function(){
            
             
          }
+         $('#nb_comment').val( nb_comment())
 
          
        
@@ -195,6 +198,40 @@ $('span').on('click',function(){
         $('div.search-x').delay(100).fadeOut(100)
     }
  })
+
+ //computer the number of comment
+ 
+ var elements=$('span').children()
+ var nb_comment=()=>{
+    let counter=0;
+    elements.each(function(){
+        var $this=$(this)
+        if($this.is('.checked')){
+            counter++
+        }
+    })
+    
+    return counter
+   
+ }
+
+ //header effect
+ $(window).scroll(function(){
+     var header=$(document).scrollTop();
+     var headerHeight=$('header').outerHeight();
+     var firstSection=$('.btx-Panel').outerHeight()
+     if(header>headerHeight){
+         $('.BurgerStore-Menu-List').addClass('fixed')
+     }else{
+        $('.BurgerStore-Menu-List').removeClass('fixed')
+     }
+     if(header>firstSection){
+        $('.BurgerStore-Menu-List').addClass('in-view')
+     }else{
+        $('.BurgerStore-Menu-List').removeClass('in-view')
+     }
+ })
+
 
 
 })
