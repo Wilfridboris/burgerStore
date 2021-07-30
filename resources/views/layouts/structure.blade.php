@@ -23,6 +23,7 @@
                     </li>
                     <li class="item"><a href={{ route('login') }}>Login</a></li>
                     <li class="item"><a href={{ route('register') }}>Register</a></li>
+                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
                     <!-- <li class="toggle"><a><i class="fas fa-align-justify"></i></a></li> -->
                    
                   

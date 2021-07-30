@@ -80,6 +80,18 @@ body{
 }
 /*Panel style the BurgerStore end*/
 
+/* Head toggle begin*/
+.select .item{
+    display: block;
+
+}
+.toggle{
+    display: block;
+}
+
+/* Head toggle  end*/
+
+
 /*Menu style of BurgerStore begin*/
 .BurgerStore-Menu-List{
     display: flex;
@@ -118,6 +130,7 @@ body{
     height: 30px;
     order: 2;
     margin:5px ;
+    display: none;
    
 
    
@@ -657,6 +670,12 @@ width: 90%;
 
 /*payment style end*/
 @media all and (min-width:960px){
+    .toggle{
+        display: none;
+    }
+    .item{
+        display: block;
+    }
     .BurgerStore-Center-Panel2{
         padding: 15px 10px 15px 10px;
        
