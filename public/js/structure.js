@@ -241,7 +241,7 @@ function toggleMenu(){
         toggle.children.html="<i class='fas fa-bars'></i>"
     }else{
         menu.addClass('select')
-        toggle.children.html="<i class='fas fa-bars'></i>"
+        toggle.children.html="<i class='fas fa-times'></i></i>"
 
     }
 }
