@@ -238,10 +238,11 @@ const menu=$('.BurgerStore-Menu-List ');
 function toggleMenu(){
     if(menu.hasClass('select')){
         menu.removeClass('select')
-        toggle.children.html="<i class='fas fa-bars'></i>"
+        toggle.children().html("<i class='fas fa-bars'></i>")
+       
     }else{
         menu.addClass('select')
-        toggle.children.html="<i class='fas fa-times'></i></i>"
+        toggle.children().html("<i class='fas fa-times'></i>")
 
     }
 }
