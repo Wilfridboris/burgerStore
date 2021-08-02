@@ -34,6 +34,7 @@ Route::get('/burger/add/{id}','BurgerController@add')->name('burger.add');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('admin');
+Route::get('/admin/post', 'HomeController@post')->name('adminPost');
 
 

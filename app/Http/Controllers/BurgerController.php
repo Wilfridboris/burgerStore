@@ -23,6 +23,7 @@ class BurgerController extends Controller
   
     function index(){
        $burger=Burger::all();
+      
 
         return view('burger.index',['burgers'=>$burger]);
     }

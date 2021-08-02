@@ -248,6 +248,7 @@ function toggleMenu(){
 }
 toggle.children().on('click',()=>{
     toggleMenu();
+    
 })
 
 })

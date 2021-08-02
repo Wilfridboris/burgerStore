@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Order;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $order=Order::all();
+  
+
+        return view('admin.Dashboard',['orders'=>$order]);
+    }
+
+    public function post(){
+        return view('admin.AdminPost');
     }
 }
