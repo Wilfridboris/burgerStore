@@ -16,7 +16,8 @@ body{
     margin: 0px;
     padding: 0px;
     box-shadow: 0px 1px 5px rgba(0, 0,0, .5);
-    display: flex;
+    display: grid;
+    
    
    
     
@@ -25,13 +26,16 @@ body{
 .item{
     text-transform: uppercase;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
  
-    order: 0;
+    order: 1;
     flex: initial;
     list-style-type: none;
+    text-align: center;
  
-    flex: 4;
+ 
+    
+   
 
     
  
@@ -43,11 +47,13 @@ body{
     flex: initial;
     list-style-type: none;
     padding: 20px 30px 20px 30px;
+    width: 100%;
+    
  
 
 }
  .selected{  
-    border-top: 3px solid rgb(238, 164, 94);
+    border-left : 3px solid rgb(238, 164, 94);
  }
 
 
@@ -57,17 +63,111 @@ body{
     display: block;
     padding: 20px 30px 20px 30px;
     margin: 5px;
+    display: none;
+    width: 100%;
+   
  
      
      
  }
  /*bar section end*/
  .product-description{
-     width: 600px;
      height: 120px;
+     width: 210px;
      border: 3px solid #cccccc;
      padding: 5px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      background-position: bottom right;
      background-repeat: no-repeat;
+ }
+ .product-section table th,td{
+     padding: 8px 5px;
+     text-align: left;
+    
+ }
+ .product-section table thead{
+   background:white;
+   box-shadow: 0px 1px 5px rgba(0, 0,0, .5);
+   
+}
+
+
+ .product-section table {
+   width: 100%;
+   
+}
+.post-section{
+    position: relative;
+}
+
+.toggleMenuLeft h1{
+    background:rgb(238, 164, 94);
+    padding: 0px 2px 2px 20px;
+    margin: 0px;
+    color: white;
+   
+
+}
+.toggleMenuLeft .back{
+   font-size: 20px;
+}
+.toggleMenuLeft .back:hover{
+    font-size: 30px;
+ }
+.toggleMenuLeft{
+   position: absolute;
+   top: 0;
+   background-color: white;
+   display: none;
+   width: 90%;
+   box-shadow: 0px 1px 5px rgba(0, 0,0, .5);
+   margin-right: 10px;
+}
+.toggleMenuLeft p{
+   margin-left:20px ;
+
+
+ }
+ img{
+     width: 50px;
+     border-radius: 50px;
+ }
+ .toggleMenuLeft input[type="text"]{
+     height: 25px;
+     border-radius: 20px ;
+     width: 200px;
+     outline: none;
+     font-family: "Comic Sans Ms","TSCu_Comic";
+ }
+ .select a{
+    display: block;
+
+}
+
+
+ @media all and (min-width:960px){
+    .toggleMenuLeft{
+        width: 500px;
+     }
+     .item{     
+         flex-wrap: nowrap;
+         flex:4;
+         order: 0;
+        
+     }
+     .item a{
+        width: auto;
+        display: block;
+     }
+  
+    .user{
+        width: auto;
+        order: 1;
+    }
+    .admin-bar{
+        display: flex;
+        
+        
+    }
+
  }

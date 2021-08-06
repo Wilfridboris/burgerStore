@@ -38,3 +38,4 @@ Route::get('/admin', 'HomeController@index')->name('admin');
 Route::get('/admin/post', 'HomeController@post')->name('adminPost');
 
 
+

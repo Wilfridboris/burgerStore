@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use App\Burger;
 
 class HomeController extends Controller
 {
@@ -31,6 +32,9 @@ class HomeController extends Controller
     }
 
     public function post(){
-        return view('admin.AdminPost');
+        $burger=Burger::all();
+
+
+        return view('admin.AdminPost',['burgers'=>$burger]);
     }
 }
