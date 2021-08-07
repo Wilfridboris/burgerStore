@@ -158,6 +158,7 @@ class BurgerController extends Controller
       $number=request('number');
       $email=request('email');
       $order_number=rand(1,3000000000);
+      $customer_orders=(session()->get('orders'));
 
       $inputs=['email'=>$email,'address'=>$address,
       '$postal code'=>$code,'name'=>$name,'number'=>$number,'apt'=>$apt];
@@ -183,7 +184,11 @@ class BurgerController extends Controller
       $orders->postal_code=$code;
       $orders->customer_name=$name;
       $orders->customer_number=$number;
-      $orders->orders=(session()->get('orders'));
+      if($customer_orders==null){
+        return redirect('/burger/payment')->with('status','You Need to Make a New Order');
+      }
+      $orders->orders=$customer_orders;
+     
       $orders->save();
       session()->forget('orders');
       return redirect('/orders/'.$order_number);

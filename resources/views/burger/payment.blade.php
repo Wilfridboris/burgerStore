@@ -123,7 +123,8 @@
                         </table>
                     </div>
 
-                    <p> <input class="submit"  type="submit" value="Confirm"/> </p>               
+                    <p> <input class="submit"  type="submit" value="Confirm"/> </p> 
+                      <h3>{{session('status')}}</h3>              
                 </div>
 
                 
