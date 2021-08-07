@@ -26,7 +26,7 @@
      @foreach($type_burgers as $type_burger)
         <div class="Section">
             <a href="/burger">
-                <img src="/img/{{$type_burger->img_burger}}" Style="width:200px" alt="">
+                <img src="/img/{{$type_burger->img_burger}}" alt="">
                 <h3>{{$type_burger->topic_burger}}</h3>
             </a>
         </div>

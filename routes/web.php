@@ -36,6 +36,7 @@ Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin');
 Route::get('/admin/post', 'HomeController@post')->name('adminPost');
-
+Route::post('/admin/product', 'HomeController@saveProduct')->name('adminSaveProduct');
+Route::post('/admin/typeproduct', 'HomeController@saveType')->name('adminSaveType');
 
 

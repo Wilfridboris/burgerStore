@@ -53,7 +53,7 @@ body{
 
 }
  .selected{  
-    border-left : 3px solid rgb(238, 164, 94);
+    border-bottom : 3px solid rgb(238, 164, 94);
  }
 
 
@@ -64,12 +64,21 @@ body{
     padding: 20px 30px 20px 30px;
     margin: 5px;
     display: none;
-    width: 100%;
+    
    
  
      
      
  }
+ .item a i{
+  font-size: 18px;
+    
+   
+ 
+     
+     
+ }
+ 
  /*bar section end*/
  .product-description{
      height: 120px;
@@ -169,5 +178,6 @@ body{
         
         
     }
+  
 
  }
