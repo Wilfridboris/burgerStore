@@ -36,7 +36,12 @@ Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin');
 Route::get('/admin/post', 'HomeController@post')->name('adminPost');
+Route::delete('/admin/product/{id}', 'HomeController@destroyProduct')->name('productDestroy');
+Route::patch('/admin/product/{id}', 'HomeController@updateProduct')->name('productUpdate');
 Route::post('/admin/product', 'HomeController@saveProduct')->name('adminSaveProduct');
 Route::post('/admin/typeproduct', 'HomeController@saveType')->name('adminSaveType');
+Route::delete('/admin/type/{id}', 'HomeController@destroyType')->name('typeDestroy');
+Route::patch('/admin/type/{id}', 'HomeController@updateType')->name('typeUpdate');
+
 
 

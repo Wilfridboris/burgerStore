@@ -85,4 +85,15 @@ class HomeController extends Controller
         $type_burger->save();
         return redirect('/admin/post')->with('status',' Product type uploaded');
     }
+    function destroyProduct($id){
+        $burger=Burger::findOrFail($id);
+        $burger->delete();
+        return redirect  ('/admin/post')->with('status',' Product Delated');
+    }
+
+    function destroyType($id){
+        $type_burger=Type_burger::findOrFail($id);
+        $type_burger->delete();
+        return redirect  ('/admin/post')->with('status',' Type Product Delated');
+    }
 }
