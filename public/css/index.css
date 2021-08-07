@@ -799,6 +799,26 @@ width: 90%;
    
     
 }
+/*mobile device**/
+@media all and (max-width:600px){
+    .Section{
+        width: 100px;
+        height: 100px;
+    }
+    .Section a img{
+   
+        border-radius: 30px;
+        width: 80px;
+        
+     }
+     .Section a h3{
+   
+       font-size: small;
+        
+     }
+
+
+}
 
     
    
