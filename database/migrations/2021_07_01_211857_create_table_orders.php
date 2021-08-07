@@ -18,9 +18,9 @@ class CreateTableOrders extends Migration
             $table->timestamps();
             $table->string('apt');
             $table->string('address');
-            $table->string('postal_code');
+            $table->string('postal_code')->nullable();
             $table->string('customer_name');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('customer_number');
             $table->json('orders');
             

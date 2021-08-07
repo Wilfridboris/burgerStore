@@ -623,6 +623,9 @@ margin: 30px 0px 0px 0px;
 /*show burger end*/
 
 /*payment style begin*/
+.track-section ,.track-image{
+    display: inline-block;
+    
 .errors li{
     list-style-type: none;
     color: rgb(238, 22, 22);
@@ -799,6 +802,8 @@ width: 90%;
    
     
 }
+
+
 /*mobile device**/
 @media all and (max-width:600px){
     .Section{
