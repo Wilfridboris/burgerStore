@@ -18,26 +18,39 @@
               <tbody>
               @foreach($burgers as $burger)
               <tr>
-                    <td> <div><img src="../img/{{$burger->img}}"/> </div> <div>{{$burger->topic}}</div> </td>
-                    <td>{{$burger->price}} </td>
+                    <td> 
+                    <div class="product-image">
+                    <img src="../img/{{$burger->img}}"/>
+                     {{-- <form action="{{route('productDestroy',$burger->id)}}" method="POST"> 
+                            @csrf
+                           @method('PATCH')
+                            <button type="submit">Update</button>
+                           
+                        </form> --}}
+                      <a id="update_image" class="update-image"><i class="fas fa-pencil-alt"></i></a>
+                    
+                       
+                     
+                     
+                    </div>
+                     <div>{{$burger->topic}}  <a id="update_topic" ><i class="fas fa-pencil-alt"></i></a>
+                     </div>
+                    </td>
+                    <td >{{$burger->price}} <a id="update_price" ><i class="fas fa-pencil-alt"></i></a> </td>
                     <td> {{$burger->type_burger}}</td>
                     <td>
                         <form action="{{route('productDestroy',$burger->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit">Delete</button>
+                            <button type="submit"><i class="fas fa-trash-alt"></i></button>
                         </form> 
-                        <form action="{{route('productDestroy',$burger->id)}}" method="POST"> 
-                            @csrf
-                           @method('PATCH')
-                            <button type="submit">Update</button>
-                        </form>
+                    
                     </td>
               </tr>
               @endforeach
               <tr>
-                <a id="newProduct"> Add a New Product</a>
-                <a id="newProductType"> Add a New Product Type</a>
+                <button id="newProduct"> Add a New Product</button>
+                <button id="newProductType"> Add a New Product Type</button>
               </tr>
               </tbody>
               </table>
@@ -98,18 +111,21 @@
               <tbody>
                 @foreach($type_burgers as $type_burger)
               <tr>
-                    <td> <div><img src="../img/{{$type_burger->img_burger}}"/> </div> <div>{{$type_burger->topic_burger}}</div> </td>
+                    <td> 
+                    <div class="product-image">
+                    <img src="../img/{{$type_burger->img_burger}}"/> 
+                    <a class="update-iamge" id="update_price" ><i class="fas fa-pencil-alt"></i></a>
+                    </div>
+                     <div>{{$type_burger->topic_burger}} <a id="update_type_topic" ><i class="fas fa-pencil-alt"></i></a>
+                     </div>
+                      </td>
                     <td>
                         <form action="{{route('typeDestroy',$type_burger->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit">Delete</button>
+                            <button type="submit"><i class="fas fa-trash-alt"></i></button>
                         </form> 
-                        <form action="{{route('typeDestroy',$type_burger->id)}}" method="POST"> 
-                            @csrf
-                           @method('PATCH')
-                            <button type="submit">Update</button>
-                        </form>
+                        
                     </td>
               </tr>
               @endforeach

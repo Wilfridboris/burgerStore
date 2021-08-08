@@ -237,7 +237,17 @@ body{
 }
 .info ul li ,.link ul li{
     list-style-type: none;
+  
 }
+.link ul li a i {
+    font-size:18px;
+}
+.link ul li  {
+   padding: 10px;
+   display: inline-block;
+
+}
+
 .info ul li h5{
     font-size: 18px;
     font-weight: bold;
@@ -815,6 +825,7 @@ width: 90%;
         width: 200px;
         
      }
+   
     /* user-review and review-section end**/
    
     

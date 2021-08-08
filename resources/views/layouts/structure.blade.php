@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
     
-    <title>BurgerStore</title>
+    <title>Dj Julice</title>
 </head>
 <body>
  <header>
@@ -76,9 +76,9 @@
             </div> -->
             <div class="link">
                 <ul>
-                    <li>facebook</li>
-                    <li>twitter</li>
-                    <li>instagram</li>
+                    <li> <a> <i class="fab fa-facebook"></i></a></li>
+                    <li><a><i class="fab fa-instagram"></i></a></li>
+                    <li><a><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
             <div class="copyright">

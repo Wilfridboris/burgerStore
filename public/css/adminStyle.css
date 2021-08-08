@@ -153,6 +153,30 @@ body{
 
 }
 
+/*update style*/
+.product-image{
+    position: relative;
+}
+.update-image{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    cursor: pointer;
+    
+    
+}
+.update-image:hover,td div a:hover,td a:hover{
+    color:rgb(214, 81, 196)
+    
+}
+td div a,td a{
+    cursor: pointer;
+}
+
+
+
+
+
 
  @media all and (min-width:960px){
     .toggleMenuLeft{

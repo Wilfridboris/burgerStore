@@ -15,6 +15,7 @@
    
     @yield('Post')
      @yield('dashboard')
+     {{-- @yield('UpdateProduct') --}}
 
 <script src="../js/jquery.js"></script>
 <script src="../js/admin.js"></script>

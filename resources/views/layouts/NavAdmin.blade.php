@@ -11,6 +11,15 @@
             @error('image')
                         <p class="alert ">{{ $message }}</p>
             @enderror
+            @error('type')
+                        <p class="alert ">{{ $message }}</p>
+            @enderror
+            @error('price')
+                        <p class="alert ">{{ $message }}</p>
+            @enderror
+            @error('description')
+                        <p class="alert ">{{ $message }}</p>
+            @enderror
             
             
             

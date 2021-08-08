@@ -47,6 +47,8 @@ class HomeController extends Controller
          $validatedData= $request->validate([
 
            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+           'description'=>'required',
+           'price'=>'required',
              ]);
 
             //  $validator=validator::make($validatedData);
@@ -76,6 +78,7 @@ class HomeController extends Controller
         $validatedData= $request->validate([
 
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+             'type'=>'required',
               ]);
               $fileName = time().'.'.$request->image->extension();
               $request->image->move(public_path('img'), $fileName);
