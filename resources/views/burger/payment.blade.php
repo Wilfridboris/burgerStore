@@ -17,7 +17,7 @@
                     
                     <p>
                     <label>Address:</label>
-                    <input type="text" name="address" placeholder="address">
+                    <input type="text" id ="address" name="address" placeholder="add your location "> <a class="location"> <i class="fas fa-search-location"></i></a>
                     </P>
                     <p>
                     <label>Email:</label>

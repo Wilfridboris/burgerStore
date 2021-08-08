@@ -251,6 +251,27 @@ toggle.children().on('click',()=>{
     
 })
 
+/// get the location of the client
+// $('.location').on('click',()=>{
+//     $('.location').html('<i class="fas fa-hourglass-half"></i>')
+//     if(navigator.geolocation){
+//         navigator.geolocation.getCurrentPosition((position)=>{
+//             $('.location').html('<i class="fas fa-search-location"></i>')
+//             // $('#address').val(data);
+//             console.log(position);
+//             // $.get( "https://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude + "," + position.coords.longitude +"&sensor=false"+"&key=AIzaSyB0E7JaRz3RS67wyErQXDFIdIEmLUGGmG4", function(data) {
+                  
+//             //       })
+              
+           
+//         })
+
+//     }else{
+//         $('#address').val("Geolocation not supported");
+//     }
+  
+// })
+
 
 
 

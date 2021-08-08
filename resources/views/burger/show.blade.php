@@ -60,7 +60,7 @@
                 </div>
                     <div class="panel-text">
                             <div class="panel-tab-text1 ">
-                            <p>top burger that will blow up your mind made with cheese and butter all saucage include such as mayo,hot sauce,ketchup</p>
+                            <p>{{$burger->description}}</p>
                             </div>
                             <div class="panel-tab-text2 ">
                                 <div class="review-section">

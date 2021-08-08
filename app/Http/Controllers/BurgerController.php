@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 use App\Burger;
 use App\Order;
 use App\Comment;
+use App\Type_burger;
 use Validator;
 use DB;
 use Illuminate\Auth\Events\Validated;
+use Mockery\Matcher\Type;
 
 session_start();
 
@@ -23,9 +25,14 @@ class BurgerController extends Controller
   
     function index(){
        $burger=Burger::all();
+        return view('burger.index',['burgers'=>$burger]);
+    }
+    function byType($id){
+      $burger=Burger::where('type_burger',$id)->get();
       
 
         return view('burger.index',['burgers'=>$burger]);
+
     }
     function substract($id){
       $find=false;

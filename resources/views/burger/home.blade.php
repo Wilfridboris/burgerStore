@@ -25,7 +25,7 @@
     <div class="BurgerStore-Center-Panel2">
      @foreach($type_burgers as $type_burger)
         <div class="Section">
-            <a href="/burger">
+            <a href="{{route('burger.type',$type_burger->id)}}">
                 <img src="/img/{{$type_burger->img_burger}}" alt="">
                 <h3>{{$type_burger->topic_burger}}</h3>
             </a>

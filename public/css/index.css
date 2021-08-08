@@ -89,6 +89,10 @@ body{
     display: block;
     
 }
+.toggle a i{ 
+   font-size: 19px;
+   padding-top:10px ;
+}
 
 /* Head toggle  end*/
 
@@ -623,6 +627,18 @@ margin: 30px 0px 0px 0px;
 /*show burger end*/
 
 /*payment style begin*/
+.location{
+    color:rgb(54, 107, 207);
+    font-size:20px;
+    animation-name:location;
+    animation-duration: 4s;
+
+}
+
+@keyframes location{
+    from {color: rgb(51, 153, 119);}
+    to {color: rgb(0, 162, 255);}
+}
 .track-section ,.track-image{
     display: inline-block;
     
