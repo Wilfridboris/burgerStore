@@ -1,4 +1,17 @@
 $(function(){
+    $("a").on('click',function(){
+        if($(this).is('#update')){
+            $(this).next().animate({width:'toggle'},350);
+           
+        }
+     })
+     $("a").on('click',function(){
+        if($(this).is('#back')){
+            $(this).parent().animate({width:'toggle'},350);
+        }
+     })
+  
+     
 
 
 $('#newProduct').on('click',()=>{
@@ -33,5 +46,7 @@ toggle.on('click',()=>{
     toggleMenu();
     
 })
+
+// update section functionality
 
 });

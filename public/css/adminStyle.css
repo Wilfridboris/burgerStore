@@ -114,6 +114,7 @@ body{
     padding: 0px 2px 2px 20px;
     margin: 0px;
     color: white;
+  
    
 
 }
@@ -125,6 +126,7 @@ body{
  }
 .toggleMenuLeft{
    position: absolute;
+   z-index: 2;
    top: 0;
    background-color: white;
    display: none;
@@ -162,6 +164,7 @@ body{
     top: 30px;
     left: 40px;
     cursor: pointer;
+   
     
     
 }
@@ -171,6 +174,14 @@ body{
 }
 td div a,td a{
     cursor: pointer;
+}
+.update_product{
+    position: fixed;
+    z-index: 2;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
 }
 
 

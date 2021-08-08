@@ -99,4 +99,34 @@ class HomeController extends Controller
         $type_burger->delete();
         return redirect  ('/admin/post')->with('status',' Type Product Delated');
     }
+    function updateImageProduct(Request $request, $id){
+        $burger=Burger::find($id);
+        
+        $validatedData= $request->validate([
+
+            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            
+           ]);
+              $fileName = time().'.'.$request->image->extension();
+              $request->image->move(public_path('img'), $fileName);
+              $burger->img=$fileName;
+              $burger->save();
+              return redirect('/admin/post')->with('status',' Image updated');
+
+
+    }
+
+    function updateTopicProduct(Request $request,$id){
+        $burger=Burger::find($id);
+        $validatedData= $request->validate([
+    
+            'topic' => 'required',
+            
+           ]);
+        $burger->topic=request('topic');
+        $burger->save();
+        return redirect('/admin/post')->with('status',' name updated');
+    
+    }
 }
+
