@@ -178,11 +178,13 @@ td div a,td a{
 .update_product{
     position: fixed;
     z-index: 2;
+    top:40%;
     background: white;
     border-radius: 20px;
     padding: 10px;
     display: none;
 }
+
 
 
 

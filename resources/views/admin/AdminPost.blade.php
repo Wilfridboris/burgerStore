@@ -62,7 +62,26 @@
                       
                       </div>
                     </td>
-                    <td >{{$burger->price}} <a id="update_price" ><i class="fas fa-pencil-alt"></i></a> </td>
+                    <td >
+                    {{$burger->price}}
+                       <a id="update" ><i class="fas fa-pencil-alt"></i></a>
+                     <div class="update_product">
+                      <a id='back'><i class="fas fa-arrow-circle-left back"></i></a>
+                      <form action="{{route('productPriceUpdate',$burger->id)}}" method="POST" > 
+                            @csrf
+                           @method('PATCH')
+                        <p><label>Change the Price</p>
+                      <p>
+                      <input type="text" name="price"/>
+                      <p>
+                      <p>  <button type="submit">OK</button></p>
+                            
+                         
+                        </form> 
+                      
+                      </div>
+                     </td>
+                   
                     <td> {{$burger->type_burger}}</td>
                     <td>
                         <form action="{{route('productDestroy',$burger->id)}}" method="POST" >
@@ -141,10 +160,38 @@
                     <td> 
                     <div class="product-image">
                     <img src="../img/{{$type_burger->img_burger}}"/> 
-                    <a class="update-iamge" id="update_price" ><i class="fas fa-pencil-alt"></i></a>
+                    <a class="update-iamge" id="update" ><i class="fas fa-pencil-alt"></i></a>
+                    <div  class="update_product ">
+                     <a id='back'><i class="fas fa-arrow-circle-left back"></i></a>
+                    <form action="{{route('typeImageUpdate',$type_burger->id)}}" method="POST" enctype="multipart/form-data"> 
+                            @csrf
+                           @method('PATCH')
+                        <p><label>Change the Image</label></p>
+                      <p>
+                      <input type="file" name="image"/>
+                      <p>
+                      <p>  <button type="submit">OK</button></p>
+                            
+                         
+                        </form> 
                     </div>
-                     <div>{{$type_burger->topic_burger}} <a id="update_type_topic" ><i class="fas fa-pencil-alt"></i></a>
+                     <div>{{$type_burger->topic_burger}} 
                      </div>
+                     <a id="update" ><i class="fas fa-pencil-alt"></i></a>
+                       <div  class="update_product ">
+                     <a id='back'><i class="fas fa-arrow-circle-left back"></i></a>
+                    <form action="{{route('typeTopicUpdate',$type_burger->id)}}" method="POST" > 
+                            @csrf
+                           @method('PATCH')
+                        <p><label>Change the name</label></p>
+                      <p>
+                      <input type="text" name="topic"/>
+                      <p>
+                      <p>  <button type="submit">OK</button></p>
+                            
+                         
+                        </form> 
+                    </div>
                       </td>
                     <td>
                         <form action="{{route('typeDestroy',$type_burger->id)}}" method="POST">

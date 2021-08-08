@@ -40,10 +40,13 @@ Route::get('/admin/post', 'HomeController@post')->name('adminPost');
 Route::delete('/admin/product/{id}', 'HomeController@destroyProduct')->name('productDestroy');
 Route::patch('/admin/product/image/{id}', 'HomeController@updateImageProduct')->name('productImageUpdate');
 Route::patch('/admin/product/topic/{id}', 'HomeController@updateTopicProduct')->name('productTopicUpdate');
+Route::patch('/admin/product/price/{id}', 'HomeController@updatePriceProduct')->name('productPriceUpdate');
+Route::patch('/admin/type/image/{id}', 'HomeController@updateImageType')->name('typeImageUpdate');
+Route::patch('/admin/type/topic/{id}', 'HomeController@updateTopicType')->name('typeTopicUpdate');
 Route::post('/admin/product', 'HomeController@saveProduct')->name('adminSaveProduct');
 Route::post('/admin/typeproduct', 'HomeController@saveType')->name('adminSaveType');
 Route::delete('/admin/type/{id}', 'HomeController@destroyType')->name('typeDestroy');
-Route::patch('/admin/type/{id}', 'HomeController@updateType')->name('typeUpdate');
+
 
 
 

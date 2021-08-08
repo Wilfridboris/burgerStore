@@ -128,5 +128,44 @@ class HomeController extends Controller
         return redirect('/admin/post')->with('status',' name updated');
     
     }
+
+    function updatePriceProduct(Request $request,$id){
+        $burger=Burger::find($id);
+        $validatedData= $request->validate([
+    
+            'price' => 'required',
+            
+           ]);
+           $burger->price=request('price');
+           $burger->save();
+           return redirect('/admin/post')->with('status',' Price updated');
+
+    }
+    function updateImageType(Request $request,$id){
+        $type_burger=Type_burger::find($id);
+        $validatedData= $request->validate([
+
+            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            
+           ]);
+              $fileName = time().'.'.$request->image->extension();
+              $request->image->move(public_path('img'), $fileName);
+              $type_burger->img_burger=$fileName;
+              $type_burger->save();
+              return redirect('/admin/post')->with('status',' Image updated');
+
+    }
+    function updateTopicType(Request $request,$id){
+        $type_burger=Type_burger::find($id);
+        $validatedData= $request->validate([
+
+            'topic' => 'required',
+            
+           ]);
+           $type_burger->topic_burger=request('topic');
+           $type_burger->save();
+           return redirect('/admin/post')->with('status',' name updated');
+
+    }
 }
 
