@@ -18,7 +18,7 @@
                   <div class="order">
                 @foreach($burgers as $burger)
                 <div class="order-item">
-                                         <a href="/burger/{{$burger->id}}"><img src="../img/{{$burger->img}}"  alt="">
+                                         <a href="{{route('burger.show',$burger->id)}}"><img src="../img/{{$burger->img}}"  alt="">
                                             <p>{{$burger->topic}}</p>
                                         </a>
                                          <p>{{$burger->price}}$</p>

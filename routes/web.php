@@ -16,18 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'AccueilController@index')->name('accueil');
 Route::get('/burgers','BurgerController@index')->name('burger.index');
-Route::get('/burger/{id}','BurgerController@show')->name('burger.show');
 Route::get('/type/{id}','BurgerController@byType')->name('burger.type');
 Route::post('/orders','BurgerController@store')->name('burger.store');
 Route::post('/burger/comment/{id}','BurgerController@storeComment')->name('burger.storeComment');
 Route::get('/orders/{id}','BurgerController@getOrder')->name('burger.getorder');
-Route::get('/burger/order/{topic}','BurgerController@setOrder')->name('burger.order');
+Route::get('/burger/order/{id}','BurgerController@setOrder')->name('burger.order');
 Route::get('/burger/cart','BurgerController@checkout')->name('burger.checkout');
 Route::get('/burger/payment','BurgerController@pay')->name('burger.pay');
-
 Route::get('/burger/remove/{id}','BurgerController@remove')->name('burger.remove');
 Route::get('/burger/substract/{id}','BurgerController@substract')->name('burger.substract');
 Route::get('/burger/add/{id}','BurgerController@add')->name('burger.add');
+Route::get('/burger/{id}','BurgerController@show')->name('burger.show');
 
 //npm install --save @fortawesome/fontawesome-free php artisan db:seed --class=InsertTypeBurger    
 

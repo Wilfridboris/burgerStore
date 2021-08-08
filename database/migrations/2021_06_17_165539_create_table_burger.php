@@ -23,7 +23,10 @@ class CreateTableBurger extends Migration
             $table->integer('type_burger');
             $table->string('img');
             $table->json('ingredients');
-            $table->foreign('type_burger')->references('id')->on('type_burgers');
+            $table->foreign('type_burger')
+            ->references('id')
+            ->on('type_burgers')
+            ->onDelete('cascade');
         });
     }
 

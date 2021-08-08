@@ -72,7 +72,7 @@
                   <a href="{{route('burger.pay')}}">Proceed <i class="fas fa-shopping-basket"></i></a>
               </div>
               <div class="btx-checkout btx">
-                  <a href="/burger/">Back To Menu <i class="fas fa-arrow-left"></i></a>
+                  <a href="/burgers/">Back To Menu <i class="fas fa-arrow-left"></i></a>
               </div>
         </div>
       
