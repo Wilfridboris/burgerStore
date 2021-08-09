@@ -50,7 +50,7 @@
             <p class="quantity"></p>
 
             <div class="order-btx"><a href="/burger/order/{{$burger->id}}" id="order-btx">Add <i class="fas fa-plus"></i></a></div>
-            <div class="order-btx"><a href="/burger/">Back <i class="fas fa-arrow-left"></i></a></div>
+            <div class="order-btx"><a href="/burgers/">Back <i class="fas fa-arrow-left"></i></a></div>
         </td>
         <tr>
              <td class="panel-show-tab">
