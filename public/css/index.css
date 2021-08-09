@@ -917,6 +917,10 @@ width: 90%;
         left: 50%;
         overflow: auto;
      }
+     .about-goal{
+        width: 300px;
+        padding: 20px;
+    }
 
 
 }
