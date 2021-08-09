@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 /**php artisan make:migration create_pizza_table */
 
 Route::get('/', 'AccueilController@index')->name('accueil');
+Route::get('/about', 'AccueilController@about')->name('about');
 Route::get('/burgers','BurgerController@index')->name('burger.index');
 Route::get('/type/{id}','BurgerController@byType')->name('burger.type');
 Route::post('/orders','BurgerController@store')->name('burger.store');

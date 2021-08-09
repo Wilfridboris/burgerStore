@@ -11,4 +11,7 @@ class AccueilController extends Controller
         $type_burger=Type_burger::all();
         return view('burger.home',['type_burgers'=>$type_burger]);
     }
+    public function about(){
+        return view('burger.about');
+    }
 }

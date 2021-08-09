@@ -47,6 +47,7 @@
      @yield('order-checkout')
      @yield('payment')
      @yield('orders-track')
+     @yield('about')
 
     
     </main>
@@ -55,7 +56,7 @@
             <div class="info">
                 <ul>
                     <li><h5>About Us</h5></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/about">About</a></li>
                     <li><a href="#">Investor</a></li>
                     <li><a href="#">Term of Service</a></li>
                     <li><a href="#">Contact Us</a></li>
