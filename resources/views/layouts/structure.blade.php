@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
     
-    <title>Dj Julice</title>
+    <title>Julice</title>
 </head>
 <body>
  <header>
             <div class="BurgerStore-Head-Panel">
-                <h3> DJ JULICE </h3>
+                <h3> JULICE </h3>
             </div>
             <div>
                 <ul class="BurgerStore-Menu-List ">
