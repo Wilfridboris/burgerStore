@@ -184,8 +184,29 @@ td div a,td a{
     padding: 10px;
     display: none;
 }
-
-
+/*orders style begin*/
+.orders ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.orders ul li{
+   padding: 10px;
+   margin-left: 10px;
+   list-style-type: none ;
+   background-color:rgb(27, 103, 190) ;
+}
+.orders ul li{
+    padding: 10px;
+    margin-left: 10px;
+    list-style-type: none ;
+    background-color:rgb(27, 103, 190) ;
+ }
+ .orders ul li a{
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+ }
 
 
 

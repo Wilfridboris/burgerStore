@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $order=Order::all();
+        $order=Order::orderBy('updated_at','desc')->get();
   
   
 

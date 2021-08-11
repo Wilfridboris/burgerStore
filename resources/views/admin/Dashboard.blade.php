@@ -2,6 +2,10 @@
 @section('dashboard')
 
  <div class="orders">
+  <ul>
+    <li><a href="#analytics">you made:0F</a></li>
+    <li><a href="#total">Total Order:0</a></li>
+  </uL>
         <table>
             <tr>
                 <th>Name</th>

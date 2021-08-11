@@ -3,7 +3,7 @@
 @section('about')
 <div class="about-head">
  
-        <img src="../img/about.png" width="350px"/>
+        <img src="../img/about.jpg" width="350px"/>
     
      <div class="about-head-section">
         <h1>About Us</h1>
