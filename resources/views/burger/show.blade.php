@@ -40,7 +40,7 @@
     
     <tr >
         <td class="burger-item">
-            <img src="/img/burger.png" alt="">
+            <img src="/img/{{$burger->img}}" alt="">
         </td>
         <td class="burger-details">
         <h3>{{$burger->topic}}</h3>
